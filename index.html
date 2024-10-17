@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avance de trabajo Final 2 - Taller de Programación Web</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body class="container py-4">
+    <div class="d-flex align-items-center mb-4">
+        <img src="logo-utp.png" alt="Logo UTP" class="img-fluid me-3" style="width: 100px;">
+        <div>
+            <h1 class="mb-0">Avance de trabajo Final 2</h1>
+            <p class="mb-0"><strong>Curso:</strong> Taller de Programación Web</p>
+            <p class="mb-0"><strong>Docente:</strong> Ms. Johan Max A. López H.</p>
+            <p class="mb-0"><strong>Fecha:</strong> 17/10/2024</p>
+        </div>
+    </div>
+
+    <!-- Se ha eliminado el botón de menú ya que no tenía una funcionalidad clara en este contexto -->
+
+    <h2>Objetivos:</h2>
+    <ol class="mb-4">
+        <li>Personalización del sitio web con CSS: Tipografía, archivos externos, imágenes.</li>
+        <li>Construcción de un sitio web utilizando fuentes e íconos.</li>
+        <li>Animaciones, transiciones y transformaciones con CSS.</li>
+        <li>Diseño responsivo e imágenes responsivas.</li>
+        <li>Principios de Flexbox y Grid Layout.</li>
+    </ol>
+
+    <h2>Instrucciones:</h2>
+    <p class="mb-4">A continuación, se presenta un código HTML básico sobre una tienda de plantas. Tu tarea es mejorar y personalizar este sitio web utilizando CSS y siguiendo las indicaciones proporcionadas. Asegúrate de cumplir con todos los requisitos para obtener la puntuación completa.</p>
+
+    <h3>Código HTML base:</h3>
+    <pre class="bg-light p-3 mb-4"><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="es"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Jardín Botánico Online&lt;/title&gt;
+    &lt;link rel="stylesheet" href="styles.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Jardín Botánico Online&lt;/h1&gt;
+        &lt;nav&gt;
+            &lt;ul&gt;
+                &lt;li&gt;&lt;a href="#inicio"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#productos"&gt;Productos&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#sobre-nosotros"&gt;Sobre Nosotros&lt;/a&gt;&lt;/li&gt;
+                &lt;li&gt;&lt;a href="#contacto"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/nav&gt;
+    &lt;/header&gt;
+
+    &lt;main&gt;
+        &lt;section id="inicio"&gt;
+            &lt;h2&gt;Bienvenidos a nuestro jardín virtual&lt;/h2&gt;
+            &lt;p&gt;Descubre la belleza de la naturaleza desde la comodidad de tu hogar.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id="productos"&gt;
+            &lt;h2&gt;Nuestras Plantas&lt;/h2&gt;
+            &lt;div class="galeria-productos"&gt;
+                &lt;div class="producto"&gt;
+                    &lt;img src="https://via.placeholder.com/200" alt="Planta 1"&gt;
+                    &lt;h3&gt;Planta 1&lt;/h3&gt;
+                    &lt;p&gt;Descripción de la planta 1.&lt;/p&gt;
+                    &lt;button&gt;Comprar&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;!-- Repite este bloque para las plantas 2, 3 y 4 --&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section id="sobre-nosotros"&gt;
+            &lt;h2&gt;Sobre Nosotros&lt;/h2&gt;
+            &lt;p&gt;Somos una tienda en línea dedicada a llevar la naturaleza a tu hogar.&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section id="contacto"&gt;
+            &lt;h2&gt;Contacto&lt;/h2&gt;
+            &lt;form&gt;
+                &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+                &lt;input type="text" id="nombre" name="nombre" required&gt;
+
+                &lt;label for="email"&gt;Email:&lt;/label&gt;
+                &lt;input type="email" id="email" name="email" required&gt;
+
+                &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+                &lt;textarea id="mensaje" name="mensaje" required&gt;&lt;/textarea&gt;
+
+                &lt;button type="submit"&gt;Enviar&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+        &lt;p&gt;&amp;copy; 2024 Jardín Botánico Online. Todos los derechos reservados.&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+    </code></pre>
+
+    <h2>Tareas y puntuación:</h2>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title">1. Personalización con CSS y tipografía (4 puntos)</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Utiliza una fuente personalizada de Google Fonts para los títulos. (1 punto) <small class="text-muted">Sugerencia: Explora fuentes como 'Playfair Display' o 'Montserrat' para los títulos.</small></li>
+                <li class="list-group-item">Aplica una fuente diferente para el texto del cuerpo. (1 punto) <small class="text-muted">Considera usar 'Roboto' o 'Open Sans' para el texto principal.</small></li>
+                <li class="list-group-item">Crea un esquema de colores coherente para todo el sitio. (1 punto) <small class="text-muted">Utiliza tonos verdes y marrones para reflejar la naturaleza.</small></li>
+                <li class="list-group-item">Implementa un diseño de encabezado atractivo con un logotipo (puede ser texto estilizado). (1 punto) <small class="text-muted">Puedes usar CSS para crear un logotipo simple con texto y un ícono de hoja.</small></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title">2. Iconos y elementos visuales (3 puntos)</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Agrega íconos de Font Awesome a los elementos de navegación. (1 punto) <small class="text-muted">Usa íconos como 'fa-home', 'fa-leaf', 'fa-info-circle' y 'fa-envelope'.</small></li>
+                <li class="list-group-item">Incluye un ícono decorativo en la sección "Sobre Nosotros". (1 punto) <small class="text-muted">Considera un ícono grande de planta o árbol como fondo.</small></li>
+                <li class="list-group-item">Crea un botón de "scroll to top" con un ícono de flecha. (1 punto) <small class="text-muted">Usa 'fa-arrow-up' y posiciónalo fijo en la esquina inferior derecha.</small></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title">3. Animaciones y transiciones (4 puntos)</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Crea una transición hover para los botones de "Comprar". (2 puntos) <small class="text-muted">Usa 'transform: scale()' y cambia el color de fondo al hacer hover.</small></li>
+                <li class="list-group-item">Implementa una animación de carga (spinner) que se muestre brevemente al cargar la página. (1 punto) <small class="text-muted">Crea un div con 'border-radius: 50%' y anímalo con '@keyframes'.</small></li>
+                <li class="list-group-item">Añade una transformación a las imágenes de los productos al hacer hover. (1 punto) <small class="text-muted">Aplica un ligero zoom o rotación a las imágenes.</small></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title">4. Diseño responsivo (4 puntos)</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Asegúrate de que el diseño sea completamente responsivo y se adapte a dispositivos móviles, tablets y desktops. (2 puntos) <small class="text-muted">Usa 'max-width' y porcentajes para elementos flexibles.</small></li>
+                <li class="list-group-item">Implementa un menú hamburguesa para dispositivos móviles. (1 punto) <small class="text-muted">Crea un botón con tres líneas horizontales que muestre/oculte el menú.</small></li>
+                <li class="list-group-item">Utiliza al menos una media query para ajustar el diseño en diferentes tamaños de pantalla. (1 punto) <small class="text-muted">Ajusta el layout a una columna para móviles (max-width: 768px).</small></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="card-body">
+            <h3 class="card-title">5. Flexbox y Grid Layout (5 puntos)</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Utiliza Flexbox para la navegación del encabezado. (1 punto) <small class="text-muted">Usa 'display: flex' y 'justify-content: space-between'.</small></li>
+                <li class="list-group-item">Implementa Grid Layout para la galería de productos, asegurando que se ajuste responsivamente. (2 puntos) <small class="text-muted">Usa 'display: grid' y 'grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))'.</small></li>
+                <li class="list-group-item">Usa Flexbox o Grid para estructurar el formulario de contacto. (1 punto) <small class="text-muted">Organiza los campos del formulario en dos columnas con Flexbox.</small></li>
+                <li class="list-group-item">Aplica Flexbox o Grid para organizar el contenido en la sección "Sobre Nosotros". (1 punto) <small class="text-muted">Usa Flexbox para alinear el texto y la imagen decorativa.</small></li>
+            </ul>
+        </div>
+    </div>
+
+    <h2>Entrega:</h2>
+    <ul class="list-group mb-4">
+        <li class="list-group-item">Debes entregar los archivos HTML y CSS completos.</li>
+        <li class="list-group-item">Asegúrate de que todo el código esté correctamente comentado.</li>
+        <li class="list-group-item">Incluye una breve explicación de las decisiones de diseño que tomaste.</li>
+    </ul>
+
+    <p class="alert alert-success">¡Buena suerte!</p>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
